@@ -8,7 +8,7 @@ import { UsersModule } from '../users/users.module';
   imports: [
     UsersModule,
     JwtModule.register({
-      secret: 'your-super-secret-jwt-key', // В продакшені використовуй змінну середовища
+      secret: 'your-super-secret-jwt-key', // In production use an environment variable
       signOptions: { expiresIn: '15m' },
     }),
   ],
